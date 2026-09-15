@@ -31,7 +31,8 @@ DNS на **AdGuard Home** с DoH и DoT. Можно поставить рядо�
 
 ## 2. Загрузить проект в GitHub
 
-Создайте репозиторий, например `Personal-DNS`, и загрузите **содержимое** этой
+Репозиторий проекта: [dagmagnat/Personal-DNS-v1](https://github.com/dagmagnat/Personal-DNS-v1).
+Загрузите **содержимое** этой
 папки в корень, включая `.github`, `.gitignore` и `.gitattributes`.
 На верхнем уровне должны находиться `install.sh`, `dnsctl.py` и `README.md`.
 **Никакие файлы с VPS — state.json, .env, PEM, backups, cloudflare.ini — туда
@@ -39,14 +40,14 @@ DNS на **AdGuard Home** с DoH и DoT. Можно поставить рядо�
 
 ## 3. Установить
 
-В SSH сервера выполните (замените `YOUR_LOGIN` на свой GitHub-логин):
+В SSH сервера выполните:
 
 ```bash
 sudo -i
 apt-get update
 apt-get install -y git
-git clone https://github.com/YOUR_LOGIN/Personal-DNS.git
-cd Personal-DNS
+git clone https://github.com/dagmagnat/Personal-DNS-v1.git
+cd Personal-DNS-v1
 bash install.sh
 ```
 
